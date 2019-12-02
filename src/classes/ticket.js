@@ -9,6 +9,7 @@ class Ticket {
     airline,
     airlineName,
     airlineLogo,
+    airlineLogoSmall,
     departureAt,
     returnAt
   ) {
@@ -22,6 +23,7 @@ class Ticket {
     this.airline = airline
     this.airlineName = airlineName
     this.airlineLogo = airlineLogo
+    this.airlineLogoSmall = airlineLogoSmall
     this.departureAt = departureAt
     this.returnAt = returnAt
   }

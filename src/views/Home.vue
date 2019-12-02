@@ -18,6 +18,7 @@
           v-for="(ticket, key) in tickets"
           :key="key"
           :ticket="ticket"
+          :isMobile="isMobile"
         ></app-ticket>
       </div>
       <template v-else-if="!hasTickets && isSearchDone">
@@ -71,6 +72,9 @@ export default {
     },
     hasTickets () {
       return this.tickets && this.tickets.length >= 0
+    },
+    isMobile () {
+      return this.$store.state.isMobile
     }
   },
   components: {
@@ -99,7 +103,6 @@ export default {
     }
   },
   mounted () {
-    console.log(this.$vuetify.breakpoint)
   }
 }
 </script>

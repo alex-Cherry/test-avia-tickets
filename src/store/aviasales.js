@@ -68,7 +68,8 @@ export default {
           obj[airline.code] = {
             code: airline.code,
             name: airline.name || airline.name_translations.en,
-            logo: `http://pics.avs.io/200/200/${airline.code}.png`
+            logo: `http://pics.avs.io/200/200/${airline.code}.png`,
+            logoSmall: `http://pics.avs.io/99/36/${airline.code}.png`
           }
           return obj
         }, {})
@@ -85,6 +86,7 @@ export default {
           item.airline,
           state.airlines[item.airline].name,
           state.airlines[item.airline].logo,
+          state.airlines[item.airline].logoSmall,
           new Date(item.departure_at),
           new Date(item.return_at))
       })

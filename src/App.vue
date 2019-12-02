@@ -17,8 +17,11 @@ export default {
   },
   methods: {
     onResize () {
-      console.log('resize')
-      this.$store.commit('setMobile', this.$vuetify.breakpoint.xs)
+      // console.log('resize')
+      // console.log(screen.width)
+      // console.log(this.$vuetify.breakpoint.width < 600)
+      // this.$store.commit('setMobile', this.$vuetify.breakpoint.width < 600)
+      this.$store.commit('setMobile', screen.width < 600)
     }
   },
   mounted () {

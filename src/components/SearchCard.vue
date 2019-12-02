@@ -10,8 +10,8 @@
         >
           <!-- Title -->
           <v-card-title primary-title class="justify-center">
-            <div class="text-md-center">
-              <h3 class="headline mb-0 card-header">Поиск авиабилетов</h3>
+            <div>
+              <h3 class="headline mb-0 card-header text-sm-center">Поиск авиабилетов</h3>
             </div>
           </v-card-title>
 
@@ -161,7 +161,6 @@ export default {
     letter-spacing: 2px !important;
     font-size: 27px !important;
     font-weight: 700;
-  }
-  @keyframes slideLeft {
+    text-align: center;
   }
 </style>
